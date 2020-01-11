@@ -42,11 +42,14 @@
 
 								<section>
 									<h2>Lessons Learned</h2>
-									<p>When creating apps for Android using C# it may be a good idea to test the program on phones as much as possible.
-									It may be faster to compile the program using the webcam in Unity, but we discovered that the program may behave differently when run on a phone.
-									In particular, smog particles moved and looked a certain way on computers, but quite different on phones. It is unclear why the visuals were 
-									that different, but the strange movement could be explained by that the phone had less computational power. Assuming that the phones CPU was
-									slow, it would take a long time for particles to change direction or react to its environment, like wind from a fan.</p>
+									<p>A significant portion of the challanges we faced were either partly or fully due to 
+									discrepancies between the testing and the development environments. Many features that 
+									worked with none or only minor issues in the development environment broke down completely 
+									when testing with our phones. There were for instance large enough differences in how the
+									smog particles behaved to justify disabling it for the open house demo. The obvious lesson 
+									learnt here is to minimize the discrepancies between development and testing environments as
+									much as possible and to make sure to properly test new features as often and thoroughly as
+									possible.</p>
 
 									<h2>Related Work</h2>
 									<p>"Vuforia with OpenCV for Unity Example". This includes examples done with the Vuforia engine. The code is freely available
@@ -56,7 +59,7 @@
 									</p>
 
 									<h2>Challanges</h2>
-									<p>It was hard to make the game balanced. There was just too many parameters to keep track of in real time. The main focus
+									<p>It was difficult to make the game balanced and actually enjoyable. There was just too many parameters to keep track of in real time. The main focus
 									of this project was supposed to be graphics and interaction, so there was not enough room available to make the game sensible.
 									To mitigate this kind of problem in future projects, it is very important to acknowledge the scope of the project and its use cases.
 									Because of the fact that there was several people in the group, compromises were made to make decisions quickly and thus make progress.
